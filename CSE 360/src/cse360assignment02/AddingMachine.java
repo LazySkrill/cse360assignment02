@@ -7,23 +7,42 @@ public class AddingMachine
 
 	public AddingMachine () 
 	{
-		total = 0; // not needed - include for clarity
+		total = 0; 			//not needed - include for clarity
+		
+		/*
+		 *  Adding machine
+		 */
 	}
 	
-	public int getTotal () {			// Get total
+	public int getTotal () {			
 		return 0;
+		/*
+		 *  Get total
+		 */
 	}
 	
-	public void add (int value) {		// Add method
+	public void add (int value) {	
+		/*
+		 *  Add method
+		 */
 	}
 	
-	public void subtract (int value) { 	// Subtract method
+	public void subtract (int value) { 	
+		/*
+		 *  Subtract method
+		 */
 	}
 	
-	public String toString () {			// toString
+	public String toString () {			
 		return "";
+		/*
+		 *  toString
+		 */
 	}
 	
-	public void clear() {				// Clear
+	public void clear() {				
+		/*
+		 *  Clear method
+		 */
 	}
 }
