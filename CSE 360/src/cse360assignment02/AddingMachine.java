@@ -1,48 +1,64 @@
 package cse360assignment02;
-
+/*
+ *  Author: Peter Bugala
+ */
 public class AddingMachine 
 {
 	private int total;
+	private String history;
 
 
+	/*
+	 *  Adding machine
+	 */
 	public AddingMachine () 
 	{
 		total = 0; 			//not needed - include for clarity
-		
-		/*
-		 *  Adding machine
-		 */
+		history = "0";
 	}
 	
-	public int getTotal () {			
-		return 0;
-		/*
-		 *  Get total
-		 */
+	/*
+	 *  Get total
+	 */
+	public int getTotal () 
+	{			
+		return total;
 	}
 	
-	public void add (int value) {	
-		/*
-		 *  Add method
-		 */
+	/*
+	 *  Add value to the total
+	 *  Update history
+	 */
+	public void add (int value) 
+	{	
+		total = total + value;
+		history = history + " + " + value;
 	}
 	
-	public void subtract (int value) { 	
-		/*
-		 *  Subtract method
-		 */
+	/*
+	 *  Subtract value from total
+	 *  Update history
+	 */
+	public void subtract (int value) 
+	{ 	
+		total = total - value;
+		history = history + " - " + value;
 	}
 	
-	public String toString () {			
-		return "";
-		/*
-		 *  toString
-		 */
+	/*
+	 *  toString
+	 */
+	public String toString () 
+	{			
+		return history;
 	}
 	
-	public void clear() {				
-		/*
-		 *  Clear method
-		 */
+	/*
+	 *  Clear method
+	 */
+	public void clear() 
+	{	
+		total = 0;
+		history = "0";
 	}
 }
